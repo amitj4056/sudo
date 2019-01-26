@@ -16,7 +16,7 @@ def mainfunction(source):
     user = r.recognize(audio)
     print(user)
     if user == "Excel":
-        print("Excel")
+        print("Excel ")
     elif user == "Internet":
         print(internet)
     elif user == "music":
