@@ -49,16 +49,13 @@ def print_timeThread2( threadName, delay):
        'client_gravatar': True,
        'apply_markdown': True
    }  # type: Dict[str, Any]
-
    result = client.get_messages(request)
    print(result)
-   print(result['messages'][0]['content'])
-   mess=result['messages'][0]['content']
 
 
    mixer.init()
    # Get the text and convert to mp3 file
-   tts = gTTS(text=mess, lang='en',slow=False)
+   tts = gTTS(text="saurabh is good boy", lang='en',slow=False)
    tts.save('speech{}.mp3'.format(0))
    # playback the speech
    mixer.music.load('speech{}.mp3'.format(0))

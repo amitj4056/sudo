@@ -16,7 +16,7 @@ class MyBotHandler(object):
 
     	bot_handler.send_message(dict(
 	    type='private', # can be 'stream' or 'private'
-	    to='sunilkv20164012@gmail.com', # either the stream name or user's email
+	    to='saurabh4104@gmail.com', # either the stream name or user's email
 	    subject='private message by bot', # message subject
 	    content=reply.text, # content of the sent message
 	))
