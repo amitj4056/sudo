@@ -5,7 +5,7 @@
 + We are providing a feature with the help of zulip chat in which user can share ideas in his/her native language, after that we will correct that input grammetically and sent to other person. 
 + User can use both modes of communication Audio/Text to communicate.
 
-# Techologies used
+# Technologies used
 + Implemented in python3
 + SpeechRecognition library(python)
 + Zulip platform
