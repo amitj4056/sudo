@@ -9,16 +9,31 @@ class MyBotHandler(object):
         return '''Your description of the bot'''
 
     def handle_message(self, message, bot_handler):
-    	print(message['full_content'])
-    	translator = Translator()
-    	reply = translator.translate(message['full_content'], dest='en')
-    	#bot_handler.send_reply(message, reply.text)
+        translator = Translator()
 
-    	bot_handler.send_message(dict(
-	    type='private', # can be 'stream' or 'private'
-	    to='saurabh4104@gmail.com', # either the stream name or user's email
-	    subject='private message by bot', # message subject
-	    content=reply.text, # content of the sent message
-	))
+        print(message['full_content'])
+
+        sender_addr = message['display_recipient'][1]['email']
+        print(sender_addr)
+        if(sender_addr == 'sunilkv20164012@gmail.com'):
+            reply = translator.translate(message['full_content'], dest='en')
+            #bot_handler.send_reply(message, reply.text)
+
+            bot_handler.send_message(dict(
+            type='private', # can be 'stream' or 'private'
+            to='saurabh4104@gmail.com', # either the stream name or user's email
+            subject='private message to saurabh', # message subject
+            content=reply.text,))
+
+        else:
+            reply = translator.translate(message['full_content'], dest='hi')
+            #bot_handler.send_reply(message, reply.text)
+
+            bot_handler.send_message(dict(
+            type='private', # can be 'stream' or 'private'
+            to='sunilkv20164012@gmail.com', # either the stream name or user's email
+            subject='private message to sunil', # message subject
+            content=reply.text,)) # content of the sent message
+
 
 handler_class = MyBotHandler
