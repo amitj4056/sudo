@@ -11,4 +11,10 @@
 + Zulip platform
 + Google translator
 
+# Contributors
++  [Saurabh raj](https://github.com/UnixLoverSaurabh)
++  [Sunil](https://github.com/Sunilkv20164012)
++  [Amit Jain](https://github.com/amitj4056)
++  [Suraj Kumar Patel](https://github.com/surajkkpp123)
 
+-Made By Team Deep Lovers
